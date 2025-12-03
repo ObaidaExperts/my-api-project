@@ -29,3 +29,9 @@ async def health_check():
         status_code=200,
         content={"status": "healthy", "version": API_VERSION},
     )
+
+
+@app.get("/version")
+async def get_version():
+    """Get API version."""
+    return {"version": API_VERSION}
