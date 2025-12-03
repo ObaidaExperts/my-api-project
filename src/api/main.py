@@ -3,7 +3,7 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
-API_VERSION = "0.2.0"
+API_VERSION = "0.2.1"
 
 app = FastAPI(
     title="My API Project",
