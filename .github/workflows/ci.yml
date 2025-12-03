@@ -51,6 +51,10 @@ jobs:
       - name: Set up Python
         run: uv python install 3.11
 
+      # ⬇️ The missing part (fix)
+      - name: Create virtual environment
+        run: uv venv
+
       - name: Install commitizen
         run: uv pip install commitizen
 
